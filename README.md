@@ -111,8 +111,8 @@ class Placeholder:
   el: Element
  ```
 
- ### Licence
- MIT
+### Licence
+MIT
  
 [example]:https://rawgit.com/Lzrdrgn/guiant-view/master/example.html
 
