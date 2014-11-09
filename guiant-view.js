@@ -109,7 +109,7 @@ var GuiantView = (function(window) {
     return { el: div, events: ar, flags: flags, selector: selector };
   };
   
-  GuiantView.prototype._template = View.parse('<div></div>');
+  GuiantView.prototype._template = GuiantView.parse('<div></div>');
   
   GuiantView.prototype._init = function() {
     var template = this._template;
