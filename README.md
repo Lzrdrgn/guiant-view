@@ -26,14 +26,14 @@ function ExampleView() {
   this._placeholder.update(this._subViewA);
   this._container.update([this._subViewB, this._subViewC]);
 }
-ExampleView.prototype = Object.create(View.prototype);
+ExampleView.prototype = Object.create(GuiantView.prototype);
 
-ExampleView.prototype._template = View.parse(
+ExampleView.prototype._template = GuiantView.parse(
   '<div>\
      <h3 data-el="_header"></h3>\
      <div data-container="_container"></div>\
      <div data-placeholder="_placeholder"></div>\
-     <button data-onclick="_onClick">button</button>
+     <button data-onclick="_onClick">button</button>\
    </div>');
    
 ExampleView.prototype._onClick = function(e, el) {
@@ -44,7 +44,7 @@ function ExampleSubView(text) {
   this._init();
   this.el.textContent = text;
 }
-ExampleSubView.prototype = Object.create(View.prototype);
+ExampleSubView.prototype = Object.create(GuiantView.prototype);
 
 var exampleView = new ExampleView();
 document.body.appendChild(exampleView.el);
