@@ -37,7 +37,7 @@ ExampleView.prototype._template = GuiantView.parse(
    </div>');
    
 ExampleView.prototype._onClick = function(e, el) {
-  console.log('header clicked', this, e, el);
+  console.log('Button clicked', this, e, el);
 };
 
 function ExampleSubView(text) { 
