@@ -81,6 +81,9 @@ Event delegation -technique is used internally for better performance which mean
 Adds an event listener in the 'capture' -phase of event type [eventType] attached to function named [funcName]. Use this for non-bubbling events such as 'blur' and 'focus'.
 
 ### Reference
+
+Note: only GuiantView -class is exposed directly. Containers and Placeholders -instances are created internally and given to views.
+
 ``` sh
 class GuiantView
   _init: function():void // creates elements, containers, placeholders and adds event listeners.
@@ -108,6 +111,9 @@ class Placeholder:
   el: Element
  ```
 
+ ### Licence
+ MIT
+ 
 [example]:https://rawgit.com/Lzrdrgn/guiant-view/master/example.html
 
 
