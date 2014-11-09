@@ -6,6 +6,13 @@ Simple and small view class with minimal magic that can be used to:
 - Replace a placeholder with a subview.
 - Listen dom events.
 
+The aims of this class is to be fast, un-opinionated and un-magical:
+
+- 1.3kb minified & gzipped.
+- no dependencies.
+- no data binding or any model requirements.
+- cloneNode and event delegation used for better performance.
+
 ### Example
 See the [example].
 ```sh
