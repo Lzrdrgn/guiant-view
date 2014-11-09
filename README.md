@@ -7,7 +7,7 @@ Simple and small view class with minimal magic that can be used to:
 - Listen dom events.
 
 ### Example
-See the [ example.html ].
+See the [example].
 ```sh
 function ExampleView() { 
   this._init();
@@ -101,6 +101,6 @@ class Placeholder:
   el: Element
  ```
 
-[example.html]:http://htmlpreview.github.io/?https://github.com/Lzrdrgn/guiant-view/blob/master/example.html
+[example]:http://htmlpreview.github.io/?https://github.com/Lzrdrgn/guiant-view/blob/master/example.html
 
 
