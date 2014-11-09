@@ -83,7 +83,7 @@ Adds an event listener in the 'capture' -phase of event type [eventType] attache
 ### Reference
 ``` sh
 class GuiantView
-  _init: function():void // creates elements, containers and placeholders and 
+  _init: function():void // creates elements, containers, placeholders and adds event listeners.
   _template:Object
   el:Element
   (static) parse: function(templateHtml:String):Object
