@@ -101,6 +101,6 @@ class Placeholder:
   el: Element
  ```
 
-[example]:http://htmlpreview.github.io/?https://github.com/Lzrdrgn/guiant-view/blob/master/example.html
+[example]:https://rawgit.com/Lzrdrgn/guiant-view/master/example.html
 
 
