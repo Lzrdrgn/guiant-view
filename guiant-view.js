@@ -1,4 +1,4 @@
-var View = (function(window) {
+var GuiantView = (function(window) {
 
   // ---------------------------------------------------------------------------------------
   // 'static' variables
@@ -68,12 +68,12 @@ var View = (function(window) {
   };
   
   // ---------------------------------------------------------------------------------------
-  // View
+  // GuiantView
   // ---------------------------------------------------------------------------------------
 
-  var View = function() {};
+  var GuiantView = function() {};
   
-  View.parse = function(templateHTML) {
+  GuiantView.parse = function(templateHTML) {
     var templateDiv = doc.createElement('div');
     templateDiv.innerHTML = templateHTML;
     var div = templateDiv.firstElementChild;
@@ -109,9 +109,9 @@ var View = (function(window) {
     return { el: div, events: ar, flags: flags, selector: selector };
   };
   
-  View.prototype._template = View.parse('<div></div>');
+  GuiantView.prototype._template = View.parse('<div></div>');
   
-  View.prototype._init = function() {
+  GuiantView.prototype._init = function() {
     var template = this._template;
     var el = this.el = template.el.cloneNode(true);
     var flags = template.flags;
@@ -136,7 +136,7 @@ var View = (function(window) {
     }
   };
   
-  View.prototype._handleEvent = function(e) {
+  GuiantView.prototype._handleEvent = function(e) {
     var i = 0, j = 0;
     var els = [], events = [];
     var el = e.target;
@@ -164,6 +164,8 @@ var View = (function(window) {
     }
   };
 
-  return View;
+  return GuiantView;
 
 })(this);
+
+// module.exports = GuiantView
