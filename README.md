@@ -82,11 +82,11 @@ Adds an event listener in the 'capture' -phase of event type [eventType] attache
 
 ### Reference
 
-Note: only GuiantView -class is exposed directly. Containers and Placeholders -instances are created internally and given to views.
+Note: only GuiantView -class is exposed. Containers and Placeholders -instances are created internally and given to views.
 
 ``` sh
 class GuiantView
-  _init: function():void // creates elements, containers, placeholders and adds event listeners.
+  _init: function():void // creates elements, containers, placeholders and event listeners.
   _template:Object
   el:Element
   (static) parse: function(templateHtml:String):Object
